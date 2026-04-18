@@ -1,326 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Web para Estudio de Uñas | DiSo Web Studio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POP VIBE — Nail Art Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <img src="logo.png" class="nav-logo" alt="Logo del estudio de uñas">
+  <a href="https://wa.me/525500000000" class="wa-btn" id="waBtn" target="_blank" aria-label="WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>¡Reserva ya!</span>
+  </a>
 
-            <button class="menu-toggle" aria-label="Abrir menú de navegación">
-                ☰
-            </button>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">POP<span>VIBE</span></a>
+      <div class="nav-links">
+        <a href="#bento" class="nl">Servicios</a>
+        <a href="#precios" class="nl">Precios</a>
+        <a href="#feed" class="nl">Galería</a>
+        <a href="#reservar" class="nl nl-pop">¡Reservar!</a>
+      </div>
+      <button class="burger" id="burger"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mob-menu" id="mobMenu">
+    <a href="#bento" class="mml">Servicios</a>
+    <a href="#precios" class="mml">Precios</a>
+    <a href="#feed" class="mml">Galería</a>
+    <a href="#reservar" class="mml">¡Reservar!</a>
+  </div>
 
-            <ul class="nav-links">
-                <li><a href="#sobre">Estudio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#opiniones">Opiniones</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#pre-reserva">Pre-reserva</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#ubicacion">Ubicación</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <img src="logo.png" class="hero-logo" alt="Logo del estudio de uñas">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-tag-top">✦ NAIL ART STUDIO · CDMX</div>
+          <h1 class="hero-title">
+            <span class="ht-line ht-1">TUS</span>
+            <span class="ht-line ht-2">UÑAS,</span>
+            <span class="ht-line ht-3">TU <span class="ht-pop">ARTE.</span></span>
+          </h1>
+          <p class="hero-desc">Nail art de autor. Diseños únicos, colores imposibles y técnicas de vanguardia para las que no tienen miedo al color.</p>
+          <div class="hero-ctas">
+            <a href="#reservar" class="btn-pop">¡QUIERO MI CITA!</a>
+            <a href="#bento" class="btn-outline-pop">Ver servicios →</a>
+          </div>
+          <div class="hero-badges">
+            <div class="hb">4.9 ★</div>
+            <div class="hb hb-pink">2K+ clientas</div>
+            <div class="hb hb-cyan">100% arte</div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-img-block">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=700&q=85&auto=format&fit=crop" alt="Nail Art" class="hi-img">
+            <div class="hi-badge">SINCE 2020</div>
+            <div class="hi-tag">POLANCO CDMX</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-ticker">
+        <span>NAIL ART ✦</span><span>GELISH ✦</span><span>ACRÍLICO ✦</span><span>SPA ✦</span><span>DISEÑOS ✦</span>
+        <span>NAIL ART ✦</span><span>GELISH ✦</span><span>ACRÍLICO ✦</span><span>SPA ✦</span><span>DISEÑOS ✦</span>
+      </div>
+    </section>
 
-                <p class="hero-subtitle">
-                    Diseños elegantes, cuidado profesional y resultados que amarás.
-                </p>
+    <!-- BENTO GRID -->
+    <section class="bento-sec" id="bento">
+      <div class="bento-wrap">
+        <div class="bento-head reveal">
+          <div class="pop-eyebrow">// SERVICIOS</div>
+          <h2 class="pop-title">LO QUE<br>HACEMOS</h2>
+        </div>
+        <div class="pop-bento">
 
-                <p style="margin: 0 auto 20px auto; max-width: 700px; color: rgba(255,255,255,0.88); font-size: 14px; line-height: 1.7;">
-                    Este sitio es un ejemplo de diseño web para estudios de uñas.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20como%20este%20demo%20de%20u%C3%B1as%20para%20mi%20negocio" class="whatsapp-btn hero-btn" target="_blank" rel="noopener noreferrer">
-                        Quiero una página como esta
-                    </a>
-
-                    <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" class="call-btn" target="_blank" rel="noopener noreferrer">
-                        Pedir información
-                    </a>
-                </div>
+          <div class="pb pb-hero pop-card reveal" data-color="pink">
+            <div class="pb-img-wrap"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80&auto=format&fit=crop" alt="" class="pb-img"></div>
+            <div class="pb-body">
+              <div class="pb-num">01</div>
+              <h3 class="pb-name">GELISH<br>PREMIUM</h3>
+              <p class="pb-desc">4 semanas de color perfecto. Anti-astillado. Brillo extremo.</p>
+              <div class="pb-price">$380</div>
             </div>
-        </section>
+          </div>
 
-        <section id="sobre" class="reveal">
-            <h2>Sobre el estudio</h2>
-
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="image1.jpg" alt="Estudio de uñas" loading="lazy">
-                </div>
-
-                <div class="about-content">
-                    <p class="about-text">
-                        En Studio Nails nos especializamos en manicure, pedicure y diseños personalizados
-                        con productos de alta calidad y técnicas modernas. Queremos que cada cita sea una
-                        experiencia cómoda, estética y profesional.
-                    </p>
-
-                    <ul class="about-list">
-                        <li>Productos profesionales</li>
-                        <li>Diseños personalizados</li>
-                        <li>Atención detallada</li>
-                        <li>Ambiente cómodo y limpio</li>
-                    </ul>
-                </div>
+          <div class="pb pop-card reveal" style="--rd:.07s" data-color="cyan">
+            <div class="pb-img-wrap"><img src="https://images.unsplash.com/photo-1604655855765-d4eae6cca6be?w=600&q=80&auto=format&fit=crop" alt="" class="pb-img"></div>
+            <div class="pb-body pb-body-sm">
+              <div class="pb-num">02</div>
+              <h3 class="pb-name-sm">NAIL ART</h3>
+              <div class="pb-price-sm">$500+</div>
             </div>
-        </section>
+          </div>
 
-        <section id="servicios" class="reveal">
-            <h2>Nuestros servicios</h2>
-
-            <div class="services-container">
-                <div class="service-card">
-                    <div class="service-icon">💅</div>
-                    <h3>Gel semipermanente</h3>
-                    <p>Acabado elegante, limpio y de larga duración.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">✨</div>
-                    <h3>Uñas acrílicas</h3>
-                    <p>Estructura, estilo y diseño con acabado profesional.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>Nail art</h3>
-                    <p>Diseños creativos y personalizados para cada estilo.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">💖</div>
-                    <h3>Manicure & pedicure</h3>
-                    <p>Cuidado completo para manos y pies con acabado prolijo.</p>
-                </div>
+          <div class="pb pb-dark pop-card reveal" style="--rd:.12s" data-color="dark">
+            <div class="pb-body pb-center">
+              <div class="pb-icon">✦</div>
+              <div class="pb-num">03</div>
+              <h3 class="pb-name-sm">ACRÍLICO<br>ESCULPIDO</h3>
+              <p class="pb-desc-sm">Longitud y forma a tu gusto. La base perfecta para tus diseños.</p>
+              <div class="pb-price-sm">$450</div>
             </div>
-        </section>
+          </div>
 
-        <section id="opiniones" class="reveal">
-            <h2>Opiniones de clientas</h2>
-
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="stars">★★★★★</p>
-                    <p>Me encantaron mis uñas, el servicio fue súper profesional y muy amable.</p>
-                    <span>— Mariana</span>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="stars">★★★★★</p>
-                    <p>El lugar es muy bonito, limpio y los diseños quedan hermosos.</p>
-                    <span>— Andrea</span>
-                </div>
-
-                <div class="testimonial-card">
-                    <p class="stars">★★★★★</p>
-                    <p>Siempre salgo feliz con el resultado, cuidan muchísimo cada detalle.</p>
-                    <span>— Daniela</span>
-                </div>
+          <div class="pb pop-card reveal" style="--rd:.1s" data-color="pink">
+            <div class="pb-img-wrap"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop&crop=right" alt="" class="pb-img"></div>
+            <div class="pb-body pb-body-sm">
+              <div class="pb-num">04</div>
+              <h3 class="pb-name-sm">BUILDER<br>GEL</h3>
+              <div class="pb-price-sm">$420</div>
             </div>
-        </section>
+          </div>
 
-        <section id="faq" class="reveal">
-            <h2>Preguntas frecuentes</h2>
-
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h3>¿Trabajan con cita previa?</h3>
-                    <p>Sí, recomendamos agendar con anticipación para asegurar tu lugar.</p>
-                </div>
-
-                <div class="faq-card">
-                    <h3>¿Puedo enviar inspiración de diseño?</h3>
-                    <p>Sí, puedes mandarnos fotos de referencia por WhatsApp antes de tu cita.</p>
-                </div>
-
-                <div class="faq-card">
-                    <h3>¿Cuánto duran las uñas?</h3>
-                    <p>Depende del servicio y del cuidado, pero normalmente duran varias semanas.</p>
-                </div>
-
-                <div class="faq-card">
-                    <h3>¿Atienden manicure y pedicure el mismo día?</h3>
-                    <p>Sí, podemos agendar ambos servicios en la misma cita según disponibilidad.</p>
-                </div>
+          <div class="pb pb-pop pop-card reveal" style="--rd:.15s" data-color="pop">
+            <div class="pb-body pb-center">
+              <div class="pb-stat">2K+</div>
+              <div class="pb-stat-l">ARTISTAS<br>ATENDIDAS</div>
             </div>
-        </section>
+          </div>
 
-        <section id="pre-reserva" class="reveal">
-            <h2>Antes de tu cita</h2>
-            <p class="preconsulta-text">
-                Comparte tu servicio ideal y tus preferencias para ayudarte a organizar mejor tu cita
-                antes de escribirnos por WhatsApp.
-            </p>
-
-            <div class="preconsulta-card">
-                <form id="preconsulta-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="text" id="telefono" name="telefono" placeholder="Tu número de contacto">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="servicio">Servicio principal</label>
-                        <select id="servicio" name="servicio">
-                            <option value="">Selecciona una opción</option>
-                            <option>Gel semipermanente</option>
-                            <option>Uñas acrílicas</option>
-                            <option>Nail art</option>
-                            <option>Manicure</option>
-                            <option>Pedicure</option>
-                            <option>Manicure y pedicure</option>
-                        </select>
-                    </div>
-
-                    <div class="triage-group">
-                        <p class="triage-title">Nivel de diseño</p>
-
-                        <div class="triage-options">
-                            <label class="triage-option">
-                                <input type="radio" name="diseno" value="Sencillo">
-                                <span>Sencillo</span>
-                            </label>
-
-                            <label class="triage-option">
-                                <input type="radio" name="diseno" value="Elegante">
-                                <span>Elegante</span>
-                            </label>
-
-                            <label class="triage-option">
-                                <input type="radio" name="diseno" value="Creativo">
-                                <span>Creativo</span>
-                            </label>
-
-                            <label class="triage-option">
-                                <input type="radio" name="diseno" value="Full diseño">
-                                <span>Full diseño</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="dia">Día preferido</label>
-                            <input type="text" id="dia" name="dia" placeholder="Ej. Viernes o sábado">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="turno">Turno preferido</label>
-                            <select id="turno" name="turno">
-                                <option value="">Selecciona una opción</option>
-                                <option>Mañana</option>
-                                <option>Tarde</option>
-                                <option>Indistinto</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="detalle">Detalles o inspiración</label>
-                        <textarea id="detalle" name="detalle" rows="4" placeholder="Cuéntanos qué estilo buscas o qué te gustaría hacerte"></textarea>
-                    </div>
-
-                    <button type="submit" class="whatsapp-btn form-btn">
-                        Enviar demostración
-                    </button>
-                </form>
+          <div class="pb pb-wide pop-card reveal" style="--rd:.2s" data-color="cyan">
+            <div class="pb-wide-in">
+              <div>
+                <div class="pb-num">05</div>
+                <h3 class="pb-name-sm">SPA DE MANOS</h3>
+                <p class="pb-desc-sm">Exfoliación + masaje + nutrición. El reset que tus manos merecen.</p>
+              </div>
+              <div class="pb-price-sm" style="flex-shrink:0">$280</div>
             </div>
-        </section>
+          </div>
 
-        <section id="galeria" class="reveal">
-            <h2>Galería</h2>
+        </div>
+      </div>
+    </section>
 
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="image1.jpg" alt="Diseño de uñas" loading="lazy">
-                </div>
+    <!-- PRECIOS -->
+    <section class="precio-sec" id="precios">
+      <div class="bento-wrap">
+        <div class="bento-head reveal">
+          <div class="pop-eyebrow">// PRECIOS</div>
+          <h2 class="pop-title">LA CARTA</h2>
+        </div>
+        <div class="pop-precio-grid">
+          <div class="pp-card pop-card reveal" data-color="pink">
+            <div class="pp-name">GELISH</div>
+            <div class="pp-detail">Color sólido · 3-4 semanas</div>
+            <div class="pp-price">$380</div>
+          </div>
+          <div class="pp-card pop-card reveal" style="--rd:.07s" data-color="dark">
+            <div class="pp-name">ACRÍLICO</div>
+            <div class="pp-detail">Esculpido + color</div>
+            <div class="pp-price">$450</div>
+          </div>
+          <div class="pp-card pop-card reveal" style="--rd:.14s" data-color="cyan">
+            <div class="pp-name">BUILDER GEL</div>
+            <div class="pp-detail">Flexible y natural</div>
+            <div class="pp-price">$420</div>
+          </div>
+          <div class="pp-card pop-card reveal" style="--rd:.05s" data-color="dark">
+            <div class="pp-name">NAIL ART</div>
+            <div class="pp-detail">Por uña / paquete</div>
+            <div class="pp-price">desde $500</div>
+          </div>
+          <div class="pp-card pop-card reveal" style="--rd:.12s" data-color="pink">
+            <div class="pp-name">SPA DE MANOS</div>
+            <div class="pp-detail">Ritual completo</div>
+            <div class="pp-price">$280</div>
+          </div>
+          <div class="pp-card pp-star pop-card reveal" style="--rd:.18s" data-color="pop">
+            <div class="pp-name">PACK COMPLETO ★</div>
+            <div class="pp-detail">Todo incluido · La experiencia total</div>
+            <div class="pp-price">$750</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="gallery-item">
-                    <img src="image2.jpg" alt="Servicio de manicure" loading="lazy">
-                </div>
+    <!-- INSTAGRAM FEED SIMULADO -->
+    <section class="feed-sec" id="feed">
+      <div class="bento-wrap">
+        <div class="bento-head reveal">
+          <div class="pop-eyebrow">// GALERÍA</div>
+          <h2 class="pop-title">NUESTRO<br>ARTE</h2>
+        </div>
+        <div class="feed-grid">
+          <div class="fg-item pop-card reveal" data-color="pink"><div class="fgi-img-wrap"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&auto=format&fit=crop" alt="" class="fgi-img"></div><div class="fgi-ov"><span>French Neón</span></div></div>
+          <div class="fg-item pop-card reveal" style="--rd:.08s" data-color="cyan"><div class="fgi-img-wrap"><img src="https://images.unsplash.com/photo-1604655855765-d4eae6cca6be?w=500&q=80&auto=format&fit=crop" alt="" class="fgi-img"></div><div class="fgi-ov"><span>Color Block</span></div></div>
+          <div class="fg-item pop-card reveal" style="--rd:.16s" data-color="dark"><div class="fgi-img-wrap"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&auto=format&fit=crop&crop=bottom" alt="" class="fgi-img"></div><div class="fgi-ov"><span>Marble Art</span></div></div>
+          <div class="fg-item pop-card reveal" style="--rd:.06s" data-color="pop"><div class="fgi-img-wrap"><img src="https://images.unsplash.com/photo-1604655855765-d4eae6cca6be?w=500&q=80&auto=format&fit=crop&crop=top" alt="" class="fgi-img"></div><div class="fgi-ov"><span>Rainbow Tips</span></div></div>
+          <div class="fg-item pop-card reveal" style="--rd:.14s" data-color="pink"><div class="fgi-img-wrap"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&auto=format&fit=crop&crop=right" alt="" class="fgi-img"></div><div class="fgi-ov"><span>Glitter Storm</span></div></div>
+          <div class="fg-item pop-card reveal" style="--rd:.22s" data-color="cyan"><div class="fgi-img-wrap"><img src="https://images.unsplash.com/photo-1604655855765-d4eae6cca6be?w=500&q=80&auto=format&fit=crop&crop=center" alt="" class="fgi-img"></div><div class="fgi-ov"><span>Nude Pop</span></div></div>
+        </div>
+      </div>
+    </section>
 
-                <div class="gallery-item">
-                    <img src="image1.jpg" alt="Aplicación de uñas" loading="lazy">
-                </div>
-
-                <div class="gallery-item">
-                    <img src="image2.jpg" alt="Uñas terminadas" loading="lazy">
-                </div>
+    <!-- RESERVAR -->
+    <section class="res-sec" id="reservar">
+      <div class="bento-wrap">
+        <div class="res-inner">
+          <div class="res-left reveal">
+            <div class="pop-eyebrow">// RESERVA</div>
+            <h2 class="pop-title res-big">¡AGENDA<br>TU CITA!</h2>
+            <p class="res-desc">No te quedes sin lugar. Respuesta en 30 minutos.</p>
+            <div class="res-info">
+              <div class="ri"><span class="ri-label">📍</span><span>Masaryk 123, Polanco, CDMX</span></div>
+              <div class="ri"><span class="ri-label">🕐</span><span>Lun – Sáb · 9:00 – 20:00</span></div>
+              <div class="ri"><span class="ri-label">📱</span><span>+52 55 0000 0000</span></div>
             </div>
-        </section>
-
-        <section id="ubicacion" class="reveal">
-            <h2>Ubicación</h2>
-            <p>Av. Reforma 123, Ciudad de México</p>
-            <p>Lunes a Sábado · 10:00 AM – 7:00 PM</p>
-
-            <div class="contact-buttons">
-                <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20como%20este%20demo%20de%20u%C3%B1as%20para%20mi%20negocio" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-                    Quiero una página como esta
-                </a>
-
-                <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" class="call-btn" target="_blank" rel="noopener noreferrer">
-                    Pedir información
-                </a>
+          </div>
+          <div class="res-right reveal" style="--rd:.12s">
+            <div class="res-form-box">
+              <div class="rfb-top">FORMULARIO DE CITA</div>
+              <form id="resForm">
+                <div class="fg-row"><div class="fg"><label>NOMBRE</label><input type="text" placeholder="Tu nombre"></div><div class="fg"><label>TELÉFONO</label><input type="tel" placeholder="+52 55 0000 0000"></div></div>
+                <div class="fg"><label>SERVICIO</label>
+                  <select><option value="">Elige tu servicio ✦</option><option>Gelish · $380</option><option>Acrílico · $450</option><option>Builder Gel · $420</option><option>Nail Art · desde $500</option><option>Spa · $280</option><option>Pack Completo · $750</option></select>
+                </div>
+                <div class="fg"><label>FECHA</label><input type="date"></div>
+                <button type="submit" class="btn-pop btn-pop-full">¡CONFIRMAR CITA! ✦</button>
+              </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.123456789!2d-99.1677!3d19.4326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8b123456789%3A0x123456789abcdef!2sMexico%20City!5e0!3m2!1ses!2smx!4v0000000000000"
-                width="100%"
-                height="300"
-                style="border: 0; border-radius: 10px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
+  </main>
 
-        <section id="final-cta" class="reveal">
-            <h2>¿Quieres una página similar para tu negocio?</h2>
-            <p>Te ayudamos a tener una web profesional, moderna y optimizada para WhatsApp.</p>
+  <footer class="footer">
+    <div class="fi"><div class="footer-logo">POP<span>VIBE</span></div><div class="flinks"><a href="#bento">Servicios</a><a href="#precios">Precios</a><a href="#feed">Galería</a></div><div class="fc">© 2026 POP VIBE · Nail Art Studio · Polanco CDMX</div></div>
+  </footer>
 
-            <div class="hero-actions">
-                <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20como%20este%20demo%20de%20u%C3%B1as%20para%20mi%20negocio" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-                    Solicitar página
-                </a>
-
-                <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" class="call-btn" target="_blank" rel="noopener noreferrer">
-                    Pedir información
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Demo de diseño web para estudio de uñas · DiSo Web Studio</p>
-    </footer>
-
-    <a href="https://wa.me/5215525051050?text=Hola,%20quiero%20una%20p%C3%A1gina%20web%20como%20este%20demo%20de%20u%C3%B1as%20para%20mi%20negocio" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
-        💬
-    </a>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
